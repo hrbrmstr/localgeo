@@ -19,9 +19,11 @@ for \code{city} and \code{state} or pass in a vector of cities/towns in \code{ci
 a single state in \code{state}. See the examples if that's confusing.
 }
 \examples{
+\dontrun{
 geocode("Berwick", "ME")
 geocode(c("Portland", "Berwick", "Alfred"), "ME")
 geocode(city=c("Baltimore", "Pittsburgh", "Houston"),
         state=c("MD", "PA", "TX"))
+}
 }
 

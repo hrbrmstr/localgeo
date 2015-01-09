@@ -38,7 +38,7 @@ packageVersion("localgeo")
 print(geocode("Eliot", "ME"))
 
 print(geocode(city=c("Houston", "Pittsburgh"),
-              state=c("TX", "PA"))
+              state=c("TX", "PA")))
 
 
 ```

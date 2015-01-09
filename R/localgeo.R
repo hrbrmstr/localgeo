@@ -11,11 +11,12 @@
 #' @param city vector of cities to geocode
 #' @param state vector of states to geocode
 #' @export
-#' @examples
+#' @examples \dontrun{
 #' geocode("Berwick", "ME")
 #' geocode(c("Portland", "Berwick", "Alfred"), "ME")
 #' geocode(city=c("Baltimore", "Pittsburgh", "Houston"),
 #'         state=c("MD", "PA", "TX"))
+#' }
 geocode <- function(city, state) {
   do.call(rbind.data.frame, mapply(function(x, y) {
     .localgeo$geo_db %>% filter(city==x, state==y)
