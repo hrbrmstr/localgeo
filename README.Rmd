@@ -1,0 +1,56 @@
+---
+title: "README"
+author: "Bob Rudis"
+date: January 09, 2015
+output:
+  md_document:
+    variant: markdown_github
+---
+
+localgeo is a package that coverts a US City+State to lon/at
+
+The following functions are implemented:
+
+- `geocode`
+
+### News
+
+- Version 0.1 released
+
+### Installation
+
+```{r eval=FALSE}
+devtools::install_github("hrbrmstr/localgeo")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+options(width=120)
+```
+
+### Usage
+
+```{r}
+library(localgeo)
+
+# current verison
+packageVersion("localgeo")
+
+print(geocode("Eliot", "ME"))
+
+print(geocode(city=c("Houston", "Pittsburgh"),
+              state=c("TX", "PA"))
+
+
+```
+
+### Test Results
+
+```{r}
+library(localgeo)
+library(testthat)
+
+date()
+
+test_dir("tests/")
+```
+
