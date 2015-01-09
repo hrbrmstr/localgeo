@@ -10,6 +10,7 @@
 #'
 #' @param city vector of cities to geocode
 #' @param state vector of states to geocode
+#' @return a \code{data.frame} of successfully geocoded entries
 #' @export
 #' @examples \dontrun{
 #' geocode("Berwick", "ME")

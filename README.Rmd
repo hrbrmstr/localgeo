@@ -7,11 +7,15 @@ output:
     variant: markdown_github
 ---
 
-localgeo is a package that coverts a US City+State to lon/at
+localgeo is a package that coverts a US City+State to lon/lat. This is a ridiculously 
+small package and is really just a function interface over the `cities.rda` file in the
+`data` directory. So, just grab that if you want to wrap your own work around it. 
+
+It was made in response to http://stackoverflow.com/a/27868207/1457051 since there's no reason to waste bandwidth or cycles on an internet API when you can have the data locally.
 
 The following functions are implemented:
 
-- `geocode`
+- `geocode` : converts US city/states to lon/lat
 
 ### News
 

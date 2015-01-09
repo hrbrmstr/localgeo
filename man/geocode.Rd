@@ -11,6 +11,9 @@ geocode(city, state)
 
 \item{state}{vector of states to geocode}
 }
+\value{
+a \code{data.frame} of successfully geocoded entries
+}
 \description{
 Using data from the shapefile in \url{http://www.mapcruzin.com/fcc-wireless-shapefiles/cities-towns.zip}
 this functon geocodes one more more city/state combos into lon/lat pairs. Since it
