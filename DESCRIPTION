@@ -1,8 +1,8 @@
 Package: localgeo
 Type: Package
 Title: localgeo
-Version: 1.0
-Date: 2015-01-09
+Version: 1.0.1
+Date: 2015-03-15
 Author: Bob Rudis (@hrbrmstr)
 Maintainer: Bob Rudis <bob@rudis.net>
 Description: Geocode US city/state to lon/lat
@@ -11,6 +11,6 @@ BugReports: https://github.com/hrbrmstr/localgeo/issues
 License: MIT + file LICENSE
 Suggests:
     testthat
+Imports: dplyr
 Depends:
-    R (>= 3.0.0),
-    dplyr
+    R (>= 3.0.0)
