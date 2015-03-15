@@ -19,7 +19,9 @@
 #'         state=c("MD", "PA", "TX"))
 #' }
 geocode <- function(city, state) {
-  do.call(rbind.data.frame, mapply(function(x, y) {
-    .localgeo$geo_db %>% filter(city==x, state==y)
-  }, city, state, SIMPLIFY=FALSE))
+
+  data.frame(city=as.character(city), state=as.character(state), stringsAsFactors=FALSE) %>%
+    left_join(.localgeo$geo_db, by=c("city", "state")) %>%
+    select(lon, lat)
+
 }

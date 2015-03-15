@@ -8,7 +8,8 @@ The following functions are implemented:
 
 ### News
 
--   Version 0.1 released
+-   Version 1.0 released
+-   Version 1.1 released - speedup
 
 ### Installation
 
@@ -20,42 +21,28 @@ devtools::install_github("hrbrmstr/localgeo")
 
 ``` r
 library(localgeo)
-```
 
-    ## Loading required package: dplyr
-    ## 
-    ## Attaching package: 'dplyr'
-    ## 
-    ## The following object is masked from 'package:stats':
-    ## 
-    ##     filter
-    ## 
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
-``` r
 # current verison
 packageVersion("localgeo")
 ```
 
-    ## [1] '1.0'
+    ## [1] '1.1'
 
 ``` r
 print(geocode("Eliot", "ME"))
 ```
 
-    ##             lon      lat  city state
-    ## Eliot -70.79925 43.15355 Eliot    ME
+    ##         lon      lat
+    ## 1 -70.79925 43.15355
 
 ``` r
 print(geocode(city=c("Houston", "Pittsburgh"),
               state=c("TX", "PA")))
 ```
 
-    ##                  lon      lat       city state
-    ## Houston    -95.36400 29.76376    Houston    TX
-    ## Pittsburgh -79.99538 40.44091 Pittsburgh    PA
+    ##         lon      lat
+    ## 1 -95.36400 29.76376
+    ## 2 -79.99538 40.44091
 
 ### Test Results
 
@@ -66,7 +53,7 @@ library(testthat)
 date()
 ```
 
-    ## [1] "Fri Jan  9 16:22:18 2015"
+    ## [1] "Sun Mar 15 07:10:05 2015"
 
 ``` r
 test_dir("tests/")

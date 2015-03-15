@@ -1,7 +1,7 @@
 Package: localgeo
 Type: Package
 Title: localgeo
-Version: 1.0.1
+Version: 1.1
 Date: 2015-03-15
 Author: Bob Rudis (@hrbrmstr)
 Maintainer: Bob Rudis <bob@rudis.net>
